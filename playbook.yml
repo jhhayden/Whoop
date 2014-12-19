@@ -13,3 +13,12 @@
   - name: Update pip and virtualenv
     shell: "pip install --upgrade pip"
     shell: "pip install --upgrade virtualenv"
+  # lets actuall install django 
+  - name: Install django
+    pip: name=django state=present
+- hosts: all
+  sudo: no
+  tasks:
+  # lets actuall start building a web site
+  - name: initialize website project
+    shell: "django-admin startproject johnhayden"
