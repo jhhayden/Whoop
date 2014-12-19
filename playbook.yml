@@ -20,5 +20,8 @@
   sudo: no
   tasks:
   # lets actuall start building a web site
-  - name: initialize website project
-    shell: "django-admin startproject johnhayden"
+  - name: lets make the project directory
+    command: django-admin.py startproject johnhayden
+    args:
+      creates: /home/vagrant/johnhayden/manage.py
+
