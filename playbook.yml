@@ -2,3 +2,6 @@
 - hosts: all
   sudo: yes
   tasks:
+  # lets start with pip and necessities
+  - name: Install build-essential
+    apt: pkg=build-essential state=installed update_cache=true
