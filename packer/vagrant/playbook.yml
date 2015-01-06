@@ -3,6 +3,7 @@
   sudo: yes
   gather_facts: yes
   tasks:
+  - debug: "Hello John"
   # lets start with pip and necessities
   - name: Install build-essential
     apt: pkg=build-essential state=installed update_cache=true
