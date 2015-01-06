@@ -17,8 +17,8 @@
         "scripts/setupUbuntu.sh"
       ]
     }
-
-  ],"builders": [
+  ],
+  "builders": [
     {
       "type": "virtualbox-iso",
       "boot_command": [
@@ -62,6 +62,6 @@
   ],
   "post-processors": [{
           "type": "vagrant",
-          "output": "boxen/ubuntu14.box"
+          "output": "boxen/whoop.box"
       }]
 }
