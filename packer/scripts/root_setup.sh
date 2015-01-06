@@ -15,6 +15,8 @@ sed -i -e '/Defaults\s\+env_reset/a Defaults\texempt_group=admin' /etc/sudoers
 sed -i -e 's/%admin ALL=(ALL) ALL/%admin ALL=NOPASSWD:ALL/g' /etc/sudoers
 # Install required libraries for RVM and Ruby
 sudo apt-get -y -q install gawk libreadline6-dev zlib1g-dev libssl-dev libyaml-dev autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev libxml2-dev libxslt-dev libxml2
+# I need to install ansible?
+sudo apt-get -y install ansible
 # install the vbox guest additions
 sudo mkdir /mnt/VBoxGuestAdditions
 sudo mount /home/vagrant/VBoxGuestAdditions_*.iso /mnt/VBoxGuestAdditions
